@@ -45,18 +45,18 @@ Name       : KKK-EnergyDrink
                 </p>
                 <div class="button">
                     <div class="box">
-                        <a href="#popup-box">
+                        <a href="#popup-box1">
                             Comanda
                         </a>
                     </div>
                 </div>
             </div>
             <div id="column1">
-                <h2>Aroma 2</h2>
+                <h2>Reserve</h2>
                 <p><img src="https://web-assests.monsterenergy.com/mnst/f49e4d7c-3d6f-4c5f-8ef2-8546f8ae423d.png"
                         width="148" alt="" height="250">
-                <p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris
-                    quam enim, molestie.</p>
+                <p>Acest mix vibrant va încărca fiecare zi cu energie pură și gust delicios,
+                </p>
                 <div class="button">
                     <div class="box">
                         <a href="#popup-box">
@@ -68,11 +68,10 @@ Name       : KKK-EnergyDrink
             </div>
 
             <div id="column2">
-                <h2>Aroma 3</h2>
+                <h2>Nitro</h2>
                 <p><img src="https://web-assests.monsterenergy.com/mnst/4b6857e5-1f36-445e-bfdb-b8c73829b628.png"
                         width="148" alt="" height="250">
-                <p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris
-                    quam enim, molestie.</p>
+                <p>Arome îmbinând note intense de citrice, cu o doză subtilă de aciditate.</p>
                 <div class="button">
                     <div class="box">
                         <a href="#popup-box">
@@ -89,7 +88,7 @@ Name       : KKK-EnergyDrink
                     de pădure. Acest mix vibrant va încărca fiecare zi cu energie pură și gust delicios.</p>
                 <div class="button">
                     <div class="box">
-                        <a href="#popup-box">
+                        <a href="#popup-box1">
                             Comanda
                         </a>
                     </div>
@@ -134,6 +133,53 @@ Name       : KKK-EnergyDrink
                         </a>
                     </div>
                 </div>
+
+                <div id="popup-box1" class="modal">
+                    <div class="content2">
+                        <h1 style="color: green;">
+                            Selectati cantitatea
+                        </h1>
+                        <b>
+                            <p>Choose the quantity you want to purchase:</p>
+                        </b>
+                        <form action="#" method="post" onsubmit="showPopup(); return false;">
+                            <input type="number" name="quantity" min="1" value="1" required>
+                            <button type="submit">Checkout</button>
+                        </form>
+                        <a href="#" class="box-close">
+                            ×
+                        </a>
+                    </div>
+                </div>
+
+                <div id="popup-box3" class="modal" style="display: none;">
+                    <div class="content2">
+                        <h1 style="color: green;">
+                            Thank you for your purchase!
+                        </h1>
+                        <b>
+                            <p>We appreciate your business.</p>
+                        </b>
+                        <a href="#" class="box-close" onclick="hidePopup();">
+                            ×
+                        </a>
+                    </div>
+                </div>
+
+                <script>
+                    function showPopup() {
+                        console.log("showPopup called");
+                        var popup = document.getElementById("popup-box3");
+                        popup.style.display = "block";
+                    }
+
+                    function hidePopup() {
+                        console.log("hidePopup called");
+                        var popup = document.getElementById("popup-box3");
+                        popup.style.display = "none";
+                    }
+                </script>
+
 
 
             </div>
